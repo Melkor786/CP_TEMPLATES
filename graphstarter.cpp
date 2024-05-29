@@ -29,6 +29,19 @@ vector<bool> visited(MX + 1, 0);
 int n;
 vector<vector<pair<int, ll>>> G(MX + 1); // adjacency list, (edge,cost) pair
 
+void dfs(int x, vector<int> G[])
+{
+  visited[x] = true;
+
+  for (auto &i : G[x])
+  {
+    if (!visited[i])
+    {
+      dfs(i);
+    }
+  }
+}
+
 int main()
 {
 
