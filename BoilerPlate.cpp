@@ -8,7 +8,7 @@
 using namespace std;
 
 #ifndef ONLINE_JUDGE
-#include "template.cpp"
+#include "Debug_Template.cpp"
 #else
 #define debug(...)
 #define debugArr(...)
