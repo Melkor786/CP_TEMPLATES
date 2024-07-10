@@ -1,7 +1,20 @@
 // DE SHAW OA 2nd Question 
+// Given an array arr of n integers, in a single operation, one can reduce any element of the array by 1. Find the minimum number of operations required to make the array a bitonic* array.
+// * A bitonic array can have any number of zeros in prefix and suffix. The non-zero part should increase from 1 to some integer k and then decrease to 1.
+// Example of a bitonic array: [0,1,2,3,2,1,0,0].
+// Example 1
+// Input: [3,3,3,3,3]
+// Answer: 6 (Final Array: [1,2,3,2,1])
+// Example 2
+// Input: [1,1,3,1,1]
+// Answer: 3 (Final Array: [0,1,2,1,0])
+// Example 3:
+// Input: [1,2,1,3,2]
+// Answer: 5 (Final Array: [1,2,1,0,0] or [0,0,1,2,1])
+
+
 // This can be done with linear time complexity:
 // Get the sum of all the values in the array.
-
 // Perform a forward sweep through the array making the necessary reductions to ensure that a value is never greater than one more than its (possibly already updated) predecessor. The predecessor value of the very first element should be taken as 0.
 
 
